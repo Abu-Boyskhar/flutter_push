@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key key}) : super(key: key);
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -29,8 +29,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   int cvet = 0;
 
-  Timer waitingTimer;
-  Timer stoppableTimer;
+  Timer? waitingTimer;
+  Timer? stoppableTimer;
 
   @override
   Widget build(BuildContext context) {
